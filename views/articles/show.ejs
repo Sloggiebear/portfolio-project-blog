@@ -1,0 +1,10 @@
+<%- include(_head) %>
+
+<h1><%= article.title %></h1>
+<span><%= article.createDate.toLocaleDateString('en-GB') %></span>
+<p>Description: <%= article.description %></p>
+<p>Markdown: <%= article.markdown %></p>
+<a href="/">All articles</a>
+<a href="edit/<%= article.id %>">edit</a>
+
+<%- include(_footer) %>
